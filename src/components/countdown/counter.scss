@@ -1,7 +1,49 @@
 @import "../../styles/styles";
 
-.counter__container {
+.countdown__container {
+    position: relative;
     height: 100vh;
     @include flexCenter();
     color: white;
+
+    .countdown {
+        position: relative;
+        width: 70vmin;
+        height: 70vmin;
+        @include flexCenter();
+        flex-direction: column;
+        border-radius: 50%;
+        box-shadow: 0 0 4px $lime-green;
+        .number {
+            transition: 1s ease;
+            animation: numberScale 1s infinite;
+            font-size: 8vmin;
+        }
+        .count {
+            font-size: 6vmin;
+        }
+        
+    }
+    .border {
+        position: absolute;
+        width: 50vmin;
+        height: 50vmin;
+        border-radius: 50%;
+        border-left: 5px solid $lime-green;
+        box-shadow: 0px 15px 20px $lime-green;
+        animation: borderRotate 5s infinite linear;
+        transition: 1s;
+    }
+}
+
+@keyframes borderRotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes numberScale {
+    100% {
+        transform: scale(1.2);
+    }
 }
