@@ -1,0 +1,7 @@
+@import "../../styles/styles";
+
+.counter__container {
+    height: 100vh;
+    @include flexCenter();
+    color: white;
+}
