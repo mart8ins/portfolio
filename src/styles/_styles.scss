@@ -1,6 +1,16 @@
 $main-background: #282c34;
 $lime-green: #00ff00;
 
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
 @mixin flexCenter {
     display: flex;
     justify-content: center;

@@ -1,16 +1,15 @@
-import {useState} from "react"
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Countdown from "./components/countdown/Countdown";
 import Landing from "./components/landing/Landing";
 
 function App() {
-    const [showCountdown,setShowCountdown] = useState(true);
-
     return (
         <div className="App">
-            {
-                showCountdown ? <Countdown setShowCountdown={setShowCountdown}/> : <Landing/>
-            }
+            <Routes>
+                <Route path="/" element={<Countdown />} />
+                <Route path="/home" element={<Landing />} />
+            </Routes>
         </div>
     );
 }

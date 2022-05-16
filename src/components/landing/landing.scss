@@ -1,0 +1,113 @@
+@import "../../styles/_styles.scss";
+
+.home {
+    color: white;
+    padding-bottom: 100px;
+    .language {
+        @include flexCenter();
+        padding: 5px;
+        .language__btn {
+            width: 50px;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+            background-color: transparent;
+            border: 1px solid white;
+            font-weight: bold;
+            color: white;
+            transition: 0.2s;
+            &:hover {
+                border: 1px solid $lime-green;
+                box-shadow: 0px 0px 7px $lime-green;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .intro {
+        padding: 40px;
+        @include flexColumn();
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 922px inset black;
+        img {
+            min-width: 150px;
+            max-width: 400px;
+            border-radius: 5px;
+            align-self: center;
+        }
+        p {
+            width: 90%;
+            margin: 10px auto;
+            text-align: justify;
+            font-size: 1rem;
+        }
+    }
+
+    .buttons {
+        @include flexColumn();
+        margin-top: 20px;
+        .openModalBtn {
+            height: 70px;
+            width: 250px;
+            align-self: center;
+            margin: 10px;
+            border-radius: 4px;
+            border: none;
+            font-size: 1.4rem;
+            font-weight: bold;
+            border: 1px solid white;
+            color: white;
+            background-color: transparent;
+            transition: 0.2s;
+
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0px 0px 15px $lime-green;
+                border: 1px solid $lime-green;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 786px) {
+    .home {
+        .intro {
+            @include flexRow;
+            margin: 60px;
+            img {
+                min-width: 200px;
+                max-width: 500px;
+                max-height: 400px;
+            }
+            p {
+                padding: 20px;
+                width: 70%;
+                margin-top: 0px;
+                font-size: 1.2rem;
+            }
+        }
+
+        .buttons {
+            @include flexRow();
+            justify-content: center;
+            margin: 100px auto;
+            width: 70%;
+            .openModalBtn {
+                height: 120px;
+                width: 350px;
+                align-self: center;
+                margin: 10px;
+                border-radius: 4px;
+                border: none;
+                font-size: 1.7rem;
+                font-weight: bold;
+                border: 1px solid white;
+                color: white;
+                background-color: transparent;
+                transition: 0.2s;
+            }
+        }
+    }
+}

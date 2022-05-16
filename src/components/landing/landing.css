@@ -1,0 +1,160 @@
+.home {
+  color: white;
+  padding-bottom: 100px;
+}
+
+.home .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+
+.home .language .language__btn {
+  width: 50px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  background-color: transparent;
+  border: 1px solid white;
+  font-weight: bold;
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.home .language .language__btn:hover {
+  border: 1px solid #00ff00;
+  -webkit-box-shadow: 0px 0px 7px #00ff00;
+          box-shadow: 0px 0px 7px #00ff00;
+  cursor: pointer;
+}
+
+.home .intro {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 922px inset black;
+          box-shadow: 0px 0px 922px inset black;
+}
+
+.home .intro img {
+  min-width: 150px;
+  max-width: 400px;
+  border-radius: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.home .intro p {
+  width: 90%;
+  margin: 10px auto;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.home .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.home .buttons .openModalBtn {
+  height: 70px;
+  width: 250px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.home .buttons .openModalBtn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 15px #00ff00;
+          box-shadow: 0px 0px 15px #00ff00;
+  border: 1px solid #00ff00;
+}
+
+@media screen and (min-width: 786px) {
+  .home .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 60px;
+  }
+  .home .intro img {
+    min-width: 200px;
+    max-width: 500px;
+    max-height: 400px;
+  }
+  .home .intro p {
+    padding: 20px;
+    width: 70%;
+    margin-top: 0px;
+    font-size: 1.2rem;
+  }
+  .home .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 100px auto;
+    width: 70%;
+  }
+  .home .buttons .openModalBtn {
+    height: 120px;
+    width: 350px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 10px;
+    border-radius: 4px;
+    border: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+}
