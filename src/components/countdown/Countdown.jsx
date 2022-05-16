@@ -21,7 +21,14 @@ const Countdown = () => {
         <div className="countdown__container">
             <div className="countdown">
                 <div className="number">{count !== 0 && count}</div>
-                <div className="count">{count === 0 ? `${"Welcome!"}` : `${"Loading..."}`}</div>
+                <div className="count">
+                    {(count === 0 && "Welcome!") ||
+                        (count === 1 && "One!") ||
+                        (count === 2 && "Two!") ||
+                        (count === 3 && "Three!") ||
+                        (count === 4 && "Four!") ||
+                        (count === 5 && "All together!")}
+                </div>
             </div>
             <div className="border"></div>
         </div>
