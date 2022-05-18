@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import "./landing.css";
-import Modal from "react-modal";
 import { AppContext } from "../../context/AppContext";
 import { intro } from "../../content-text/intro";
+import ModalViews from "./ModalViews";
 
 const Landing = () => {
     const { eng, setEng, modalSettings, setModalSettings } = useContext(AppContext);
@@ -14,18 +14,10 @@ const Landing = () => {
             type: type,
         });
     };
-
-    const handleCloseModal = () => {
-        setModalSettings({
-            open: false,
-            type: undefined,
-        });
-    };
-
-    console.log(modalSettings);
     return (
         <div className="home">
-            <Modal isOpen={modalSettings.open} onRequestClose={handleCloseModal} ariaHideApp={false} />
+            <ModalViews />
+
             <div className="language">
                 <button className="language__btn" onClick={changeLang}>
                     {eng ? "LV" : "ENG"}

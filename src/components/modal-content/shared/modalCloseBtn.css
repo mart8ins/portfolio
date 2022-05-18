@@ -1,0 +1,28 @@
+.modalCloseBtn {
+  text-align: right;
+}
+
+.modalCloseBtn button {
+  border: 1px solid grey;
+  background-color: transparent;
+  color: grey;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 0.9rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.modalCloseBtn button:hover {
+  border: 1px solid #00ff00;
+  -webkit-box-shadow: 0 0 8px #00ff00;
+          box-shadow: 0 0 8px #00ff00;
+  color: #00ff00;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 786px) {
+  .modalCloseBtn button {
+    font-size: 1.1rem;
+  }
+}

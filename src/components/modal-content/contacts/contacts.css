@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,100&display=swap");
+.contacts {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.contacts p {
+  font-family: "Kanit", sans-serif;
+}
+
+.contacts p:nth-child(1) {
+  font-size: 1.2rem;
+}
+
+.contacts p:nth-child(2) {
+  font-size: 1.3rem;
+}
+
+.contacts p:nth-child(3) {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.contacts p:nth-child(4) {
+  font-size: 1rem;
+}
+
+.contacts .my__github__icon a {
+  color: white;
+  font-size: 4rem;
+}
+
+.contacts .my__github__icon a:hover {
+  color: #00ff00;
+}

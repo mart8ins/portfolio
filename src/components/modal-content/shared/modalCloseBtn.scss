@@ -1,0 +1,29 @@
+@import "../../../styles/styles";
+
+.modalCloseBtn {
+    text-align: right;
+    button {
+        border: 1px solid grey;
+        background-color: transparent;
+        color: grey;
+        border-radius: 4px;
+        padding: 5px;
+        font-size: 0.9rem;
+        transition: 0.2s;
+
+        &:hover {
+            border: 1px solid $lime-green;
+            box-shadow: 0 0 8px $lime-green;
+            color: $lime-green;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (min-width: 786px) {
+    .modalCloseBtn {
+        button {
+            font-size: 1.1rem;
+        }
+    }
+}

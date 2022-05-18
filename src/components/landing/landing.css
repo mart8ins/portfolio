@@ -29,8 +29,6 @@
   color: white;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-animation: fromTop 1s ease;
-          animation: fromTop 1s ease;
 }
 
 .home .language .language__btn:hover {
@@ -53,8 +51,8 @@
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 922px inset black;
           box-shadow: 0px 0px 922px inset black;
-  -webkit-animation: fromLeft 1.5s ease-in-out;
-          animation: fromLeft 1.5s ease-in-out;
+  -webkit-animation: static 1.5s ease-in-out;
+          animation: static 1.5s ease-in-out;
 }
 
 .home .intro img {
@@ -136,6 +134,9 @@
 }
 
 @media screen and (min-width: 786px) {
+  .home {
+    padding-bottom: 0px;
+  }
   .home .intro {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -301,9 +302,6 @@
 @-webkit-keyframes static {
   0% {
     opacity: 0;
-    border: 1px solid #00ff00;
-    -webkit-box-shadow: 0px 0px 15px #00ff00;
-            box-shadow: 0px 0px 15px #00ff00;
   }
   100% {
     opacity: 1;
@@ -313,9 +311,6 @@
 @keyframes static {
   0% {
     opacity: 0;
-    border: 1px solid #00ff00;
-    -webkit-box-shadow: 0px 0px 15px #00ff00;
-            box-shadow: 0px 0px 15px #00ff00;
   }
   100% {
     opacity: 1;

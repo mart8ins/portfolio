@@ -1,0 +1,35 @@
+.motivation__container {
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.motivation__container h3 {
+  color: #49515f;
+  font-family: "Black Ops One", cursive;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #49515f;
+}
+
+.motivation__container p {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+@media screen and (min-width: 786px) {
+  .motivation__container {
+    padding: 100px;
+  }
+  .motivation__container h3 {
+    color: #49515f;
+    font-family: "Black Ops One", cursive;
+    letter-spacing: 5px;
+    font-size: 1.6rem;
+    border-bottom: 3px solid #49515f;
+  }
+  .motivation__container p {
+    font-size: 1.1rem;
+    padding: 20px;
+  }
+}
