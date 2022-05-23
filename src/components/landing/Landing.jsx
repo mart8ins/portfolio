@@ -5,7 +5,7 @@ import { intro } from "../../content-text/intro";
 import ModalViews from "./ModalViews";
 
 const Landing = () => {
-    const { eng, setEng, modalSettings, setModalSettings } = useContext(AppContext);
+    const { eng, setEng, setModalSettings } = useContext(AppContext);
     const changeLang = () => setEng(!eng);
 
     const handleOpenModal = (type) => {

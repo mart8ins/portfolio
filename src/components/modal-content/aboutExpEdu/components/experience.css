@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+.exp__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5px;
+  position: relative;
+}
+
+.exp__container .__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #282c34;
+  -webkit-box-shadow: 0 2px 5px #282c34;
+          box-shadow: 0 2px 5px #282c34;
+  width: 90%;
+  min-height: 150px;
+  margin: 15px auto;
+  font-family: "Kanit", sans-serif;
+}
+
+.exp__container .__data .top__ {
+  text-align: right;
+  background: -webkit-gradient(linear, left top, right top, from(#a3aab8), to(#333842));
+  background: linear-gradient(90deg, #a3aab8, #333842);
+  padding: 5px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.exp__container .__data .mid__top {
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+  padding: 5px;
+}
+
+.exp__container .__data .mid__bottom {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  padding: 10px;
+}
+
+.exp__container .__data .bottom__ {
+  background: -webkit-gradient(linear, left top, right top, from(#333842), to(#a3aab8));
+  background: linear-gradient(90deg, #333842, #a3aab8);
+  padding: 5px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 786px) {
+  .exp__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .exp__container .__data {
+    width: 400px;
+  }
+  .exp__container .__data .top__ {
+    font-size: 1.1rem;
+  }
+  .exp__container .__data .mid__top {
+    font-size: 1.4rem;
+  }
+  .exp__container .__data .mid__bottom {
+    font-size: 1.1rem;
+  }
+  .exp__container .__data .bottom__ {
+    font-size: 1.1rem;
+  }
+}

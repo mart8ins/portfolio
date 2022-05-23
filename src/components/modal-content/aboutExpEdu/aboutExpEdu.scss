@@ -1,0 +1,24 @@
+@import "../../../styles/styles";
+
+.eduExp__container {
+    @include flexColumn();
+    .work,
+    .education {
+        margin-top: 50px;
+        .eduExp__title {
+            text-align: center;
+            font-size: 1.3rem;
+            font-family: "Black Ops One", cursive;
+        }
+    }
+}
+
+@media screen and (min-width: 786px) {
+    .eduExp__container {
+        @include flexRow();
+        .work,
+        .education {
+            width: 50%;
+        }
+    }
+}

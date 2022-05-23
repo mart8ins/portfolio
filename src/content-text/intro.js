@@ -23,7 +23,7 @@ const landingButtons = {
     },
     aboutExpEdu: {
         lv: `Darba pieredze un izglītība`,
-        eng: `Work expirance and education`,
+        eng: `Work experience and education`,
     },
     contacts: {
         lv: "Kontakti",

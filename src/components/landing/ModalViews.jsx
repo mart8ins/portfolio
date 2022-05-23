@@ -22,6 +22,11 @@ const ModalViews = () => {
     const customStyles = {
         content: {
             boxShadow: "0 0 120px black",
+            backgroundColor: "whitesmoke",
+            bottom: "0px",
+            top: "0px",
+            left: "0px",
+            right: "0px",
             ...modalCustomStyle,
         },
     };

@@ -13,15 +13,24 @@ const AppContextProvider = ({ children }) => {
 
     useEffect(() => {
         if (modalSettings.type === "motivation") {
-            setModalCustomStyle({ backgroundColor: "whitesmoke" });
+            setModalCustomStyle({});
         }
         if (modalSettings.type === "contacts") {
             setModalCustomStyle({
                 backgroundColor: "#282c34",
                 width: `${smallBrowserWindow ? "75%" : window.innerWidth < 786 ? "75%" : "22%"}`,
                 height: "360px",
-                margin: "250px auto",
+                margin: "120px auto",
             });
+        }
+        if (modalSettings.type === "aboutExpEdu") {
+            setModalCustomStyle({});
+        }
+        if (modalSettings.type === "learnedTech") {
+            setModalCustomStyle({});
+        }
+        if (modalSettings.type === "projects") {
+            setModalCustomStyle({});
         }
     }, [modalSettings, smallBrowserWindow]);
 

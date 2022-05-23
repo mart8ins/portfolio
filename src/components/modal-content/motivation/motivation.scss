@@ -1,9 +1,10 @@
 @import "../../../styles/styles";
 
 .motivation__container {
-    margin-top: 10px;
     border-radius: 5px;
-    padding: 20px;
+    padding: 0px;
+    width: 90%;
+    margin: 0 auto;
 
     h3 {
         color: lighten($main-background, 15%);
@@ -20,7 +21,6 @@
 
 @media screen and (min-width: 786px) {
     .motivation__container {
-        padding: 100px;
         h3 {
             color: lighten($main-background, 15%);
             font-family: "Black Ops One", cursive;

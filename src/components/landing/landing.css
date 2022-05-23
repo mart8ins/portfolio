@@ -2,6 +2,19 @@
 .home {
   color: white;
   padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home .language {
@@ -39,7 +52,7 @@
 }
 
 .home .intro {
-  padding: 40px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,15 +62,16 @@
           flex-direction: column;
   margin: 20px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 922px inset black;
-          box-shadow: 0px 0px 922px inset black;
-  -webkit-animation: static 1.5s ease-in-out;
-          animation: static 1.5s ease-in-out;
+  -webkit-box-shadow: 0px 0px 12px #cccccc;
+          box-shadow: 0px 0px 12px #cccccc;
+  background-color: #333842;
+  -webkit-animation: static 3s ease-in-out;
+          animation: static 3s ease-in-out;
 }
 
 .home .intro img {
-  min-width: 150px;
-  max-width: 400px;
+  min-width: 120px;
+  max-width: 290px;
   border-radius: 5px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -65,7 +79,7 @@
 }
 
 .home .intro p {
-  width: 90%;
+  width: 95%;
   margin: 10px auto;
   text-align: justify;
   font-size: 1rem;
@@ -93,7 +107,9 @@
   border: none;
   font-size: 1.4rem;
   border: 1px solid #cccccc;
-  color: #cccccc;
+  -webkit-box-shadow: 0px 2px 2px white;
+          box-shadow: 0px 2px 2px white;
+  color: #f2f2f2;
   background-color: transparent;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -145,16 +161,16 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin: 100px;
+    margin: 30px 80px;
   }
   .home .intro img {
-    min-width: 200px;
-    max-width: 500px;
-    max-height: 400px;
+    min-width: 180px;
+    max-width: 450px;
+    max-height: 380px;
   }
   .home .intro p {
     padding: 20px;
-    width: 70%;
+    width: 60%;
     margin-top: 0px;
     font-size: 1.2rem;
   }
@@ -169,13 +185,15 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 100px auto;
-    width: 70%;
+    margin: 40px auto;
+    width: 90%;
   }
   .home .buttons .openModalBtn {
+    -webkit-box-shadow: none;
+            box-shadow: none;
     height: 120px;
-    width: 350px;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    color: #cccccc;
   }
 }
 
