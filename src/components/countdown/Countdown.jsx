@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./counter.css";
 
 const Countdown = () => {
-    const [count, setCount] = useState(5);
+    const [count, setCount] = useState(3);
     let intervalRef = useRef();
     const navigate = useNavigate();
 
@@ -22,12 +22,15 @@ const Countdown = () => {
             <div className="countdown">
                 <div className="number">{count !== 0 && count}</div>
                 <div className="count">
-                    {(count === 0 && "Welcome!") ||
-                        (count === 1 && "One!") ||
-                        (count === 2 && "Two!") ||
-                        (count === 3 && "Three!") ||
-                        (count === 4 && "Four!") ||
-                        (count === 5 && "All together!")}
+                    {
+                        count === 0 ? "Welcome!" : "Loading..."
+                        // ||
+                        //     (count === 1 && "One!") ||
+                        //     (count === 2 && "Two!") ||
+                        //     (count === 3 && "Three!") ||
+                        //     (count === 4 && "Four!") ||
+                        //     (count === 5 && "All together!")
+                    }
                 </div>
             </div>
             <div className="border"></div>

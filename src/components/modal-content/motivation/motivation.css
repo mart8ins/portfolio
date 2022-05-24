@@ -3,6 +3,26 @@
   padding: 0px;
   width: 90%;
   margin: 0 auto;
+  -webkit-animation: static 2s;
+          animation: static 2s;
+}
+
+@-webkit-keyframes static {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes static {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .motivation__container h3 {

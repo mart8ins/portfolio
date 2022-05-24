@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
 .home {
   color: white;
   padding-bottom: 100px;
@@ -65,8 +64,8 @@
   -webkit-box-shadow: 0px 0px 12px #cccccc;
           box-shadow: 0px 0px 12px #cccccc;
   background-color: #333842;
-  -webkit-animation: static 3s ease-in-out;
-          animation: static 3s ease-in-out;
+  -webkit-animation: static 4s;
+          animation: static 4s;
 }
 
 .home .intro img {
@@ -85,6 +84,24 @@
   font-size: 1rem;
 }
 
+@-webkit-keyframes static {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes static {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .home .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,6 +111,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 20px;
+  overflow: hidden;
 }
 
 .home .buttons .openModalBtn {
@@ -135,8 +153,17 @@
 }
 
 .home .buttons .openModalBtn:nth-child(3) {
-  -webkit-animation: static 2s ease-in-out;
-          animation: static 2s ease-in-out;
+  -webkit-animation: static 3s;
+          animation: static 3s;
+}
+
+@keyframes static {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .home .buttons .openModalBtn:nth-child(4) {
@@ -314,23 +341,5 @@
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes static {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes static {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }

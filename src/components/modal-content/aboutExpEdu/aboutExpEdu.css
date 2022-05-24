@@ -6,6 +6,26 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-animation: static 2s;
+          animation: static 2s;
+}
+
+@-webkit-keyframes static {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes static {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .eduExp__container .work,
@@ -18,6 +38,7 @@
   text-align: center;
   font-size: 1.3rem;
   font-family: "Black Ops One", cursive;
+  color: #49515f;
 }
 
 @media screen and (min-width: 786px) {

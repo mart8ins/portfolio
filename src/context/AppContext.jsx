@@ -27,7 +27,7 @@ const AppContextProvider = ({ children }) => {
             setModalCustomStyle({});
         }
         if (modalSettings.type === "learnedTech") {
-            setModalCustomStyle({});
+            setModalCustomStyle({ backgroundColor: "#282c34" });
         }
         if (modalSettings.type === "projects") {
             setModalCustomStyle({});
@@ -40,9 +40,8 @@ const AppContextProvider = ({ children }) => {
         } else {
             setSmallBrowserWindow(false);
         }
-        console.log(window.innerWidth);
     };
-    window.addEventListener("resize", updateScreenSize);
+    // window.addEventListener("resize", updateScreenSize);
 
     return <AppContext.Provider value={{ eng, setEng, modalSettings, setModalSettings, modalCustomStyle }}>{children}</AppContext.Provider>;
 };

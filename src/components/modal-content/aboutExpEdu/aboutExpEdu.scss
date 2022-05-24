@@ -2,6 +2,7 @@
 
 .eduExp__container {
     @include flexColumn();
+    @include fadeInStatic(2s);
     .work,
     .education {
         margin-top: 50px;
@@ -9,6 +10,7 @@
             text-align: center;
             font-size: 1.3rem;
             font-family: "Black Ops One", cursive;
+            color: $secondary-background;
         }
     }
 }

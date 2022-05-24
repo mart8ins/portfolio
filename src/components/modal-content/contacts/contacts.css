@@ -1,9 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,100&display=swap");
 .contacts {
   text-align: center;
   color: white;
   padding: 10px;
   border-radius: 10px;
+  -webkit-animation: static 2s;
+          animation: static 2s;
+}
+
+@-webkit-keyframes static {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes static {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .contacts p {

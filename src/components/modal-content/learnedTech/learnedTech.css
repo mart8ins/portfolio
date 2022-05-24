@@ -1,0 +1,193 @@
+.tech__container {
+  width: 100%;
+  margin: 20px auto;
+  text-align: justify;
+  -webkit-animation: static 3s;
+          animation: static 3s;
+}
+
+@-webkit-keyframes static {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes static {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.tech__container .tech__title {
+  color: #b1b7c3;
+  text-align: center;
+  font-family: "Black Ops One", cursive;
+  font-size: 1rem;
+}
+
+.tech__container .tech__navigate {
+  width: 90%;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tech__container .tech__navigate .active__tech__name {
+  min-width: 120px;
+  text-align: center;
+  color: #ebecf0;
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tech__container .tech__navigate .nav__btn {
+  width: 50px;
+  height: 25px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px #ebecf0;
+          box-shadow: 0 0 5px #ebecf0;
+  font-size: 0.9rem;
+  color: #ced2d9;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tech__container .tech__navigate .nav__btn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 8px #00ff00;
+          box-shadow: 0 0 8px #00ff00;
+  color: #00ff00;
+}
+
+.tech__container .tech__navigate .next {
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  padding-right: 5px;
+}
+
+.tech__container .tech__navigate .back {
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  padding-left: 5px;
+}
+
+.tech__container .tech__navigate .nav__btn__disable {
+  color: #333842;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.tech__container .tech__navigate .nav__btn__disable:hover {
+  cursor: default;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #333842;
+}
+
+.tech__container .tech__description {
+  color: #ced2d9;
+  width: 95%;
+  margin: 5px auto;
+}
+
+.tech__container .tech__description .tech__text {
+  font-size: 1rem;
+  text-indent: 1rem;
+}
+
+.tech__container .tech__description .tech__frameworks {
+  margin-top: 15px;
+  background-color: #333842;
+  -webkit-box-shadow: 0 0 5px #49515f;
+          box-shadow: 0 0 5px #49515f;
+  padding: 10px;
+}
+
+.tech__container .tech__description .tech__frameworks h4 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.tech__container .tech__description .tech__frameworks p {
+  font-size: 0.9rem;
+  text-indent: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .tech__container {
+    width: 60%;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 10px #49515f;
+            box-shadow: 0 0 10px #49515f;
+  }
+  .tech__container .tech__title {
+    text-align: center;
+    font-family: "Black Ops One", cursive;
+    font-size: 1.4rem;
+  }
+  .tech__container .tech__navigate {
+    width: 60%;
+    margin: 30px auto;
+  }
+  .tech__container .tech__navigate .active__tech__name {
+    font-size: 1.7rem;
+  }
+  .tech__container .tech__navigate .nav__btn {
+    font-size: 1rem;
+  }
+  .tech__container .tech__description {
+    color: #ced2d9;
+    width: 80%;
+    margin: 50px auto;
+  }
+  .tech__container .tech__description .tech__text {
+    font-size: 1.2rem;
+  }
+  .tech__container .tech__description .tech__frameworks {
+    padding: 20px;
+  }
+  .tech__container .tech__description .tech__frameworks h4 {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .tech__container .tech__description .tech__frameworks p {
+    font-size: 1rem;
+  }
+}

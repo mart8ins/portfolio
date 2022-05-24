@@ -60,7 +60,7 @@ export const exp = {
             eng: {
                 company: "SIA Elux",
                 profession: "Wholesale purchasing / customer service manager",
-                from: "Start year 2017, April",
+                from: "Started 2017, April",
                 to: "Still working",
             },
             lv: {
@@ -75,7 +75,7 @@ export const exp = {
             eng: {
                 company: "SIA Xnet",
                 profession: "Online shop purchasing / customer service manager",
-                from: "Start year 2012, June",
+                from: "Started 2012, June",
                 to: "End year 2017, March",
             },
             lv: {
@@ -90,7 +90,7 @@ export const exp = {
             eng: {
                 company: "SIA Riesta",
                 profession: "Salesman",
-                from: "Start year 2011, October",
+                from: "Started 2011, October",
                 to: "End year 2012, May",
             },
             lv: {
@@ -105,7 +105,7 @@ export const exp = {
             eng: {
                 company: "SIA Augstceltne",
                 profession: "Salesman",
-                from: "Start year 2009, December",
+                from: "Started 2009, December",
                 to: "End year 2011, September",
             },
             lv: {
@@ -120,7 +120,7 @@ export const exp = {
             eng: {
                 company: "Pub 'Čau, Rasma'",
                 profession: "Bartender",
-                from: "Start year 2009, August",
+                from: "Started 2009, August",
                 to: "End year 2009, November",
             },
             lv: {
@@ -135,7 +135,7 @@ export const exp = {
             eng: {
                 company: "SIA Latvija Statoil",
                 profession: "Salesman",
-                from: "Start year 2006, August",
+                from: "Started 2006, August",
                 to: "End year 2009, June",
             },
             lv: {
@@ -149,7 +149,7 @@ export const exp = {
             eng: {
                 company: "SIA Rīgas Pirmā garāža",
                 profession: "Security guard",
-                from: "Start year 2005, July",
+                from: "Started 2005, July",
                 to: "End year 2006, August",
             },
             lv: {

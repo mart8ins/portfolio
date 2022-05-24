@@ -1,5 +1,4 @@
 @import "../../styles/_styles.scss";
-@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
 
 .home {
     color: white;
@@ -50,12 +49,13 @@
             font-size: 1rem;
         }
 
-        animation: static 3s ease-in-out;
+        @include fadeInStatic(4s);
     }
 
     .buttons {
         @include flexColumn();
         margin-top: 20px;
+        overflow: hidden;
         .openModalBtn {
             height: 70px;
             width: 250px;
@@ -84,7 +84,7 @@
             animation: fromBottom 1.5s ease-in-out;
         }
         .openModalBtn:nth-child(3) {
-            animation: static 2s ease-in-out;
+            @include fadeInStatic(3s);
         }
         .openModalBtn:nth-child(4) {
             animation: fromTop 1.5s ease-in-out;
@@ -173,14 +173,5 @@
     }
     100% {
         transform: translateY(0);
-    }
-}
-
-@keyframes static {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
     }
 }
