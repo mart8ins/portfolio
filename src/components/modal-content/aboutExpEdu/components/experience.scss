@@ -7,13 +7,14 @@
     position: relative;
 
     .__data {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         background-color: $main-background;
         box-shadow: 0 2px 5px $main-background;
         width: 90%;
-        min-height: 150px;
+        min-height: 160px;
         margin: 15px auto;
         font-family: "Kanit", sans-serif;
 
@@ -44,6 +45,35 @@
             font-size: 0.9rem;
         }
     }
+
+    .non__active__background {
+        background-color: lighten($main-background, 24%);
+    }
+
+    .card__on__top__active {
+        @include boxOnTop(0.7);
+        @include boxOnTopNavigationTriangle(45deg, -135deg, 15px, 10px);
+    }
+
+    .card__on__top__none {
+        @include boxOnTop(0);
+    }
+
+    .middle__card {
+        transform: scale(1.1);
+    }
+
+    .bottom__card {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 
 @media screen and (min-width: 786px) {
@@ -67,6 +97,9 @@
             .bottom__ {
                 font-size: 1.1rem;
             }
+        }
+        .card__on__top__active {
+            @include boxOnTopNavigationTriangle(-45deg, 135deg, 0px, 0px);
         }
     }
 }

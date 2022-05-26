@@ -3,24 +3,21 @@
 .eduExp__container {
     @include flexColumn();
     @include fadeInStatic(2s);
+    .eduExp__title {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 1.3rem;
+        font-family: "Black Ops One", cursive;
+        color: $secondary-background;
+    }
     .work,
     .education {
-        margin-top: 50px;
-        .eduExp__title {
-            text-align: center;
-            font-size: 1.3rem;
-            font-family: "Black Ops One", cursive;
-            color: $secondary-background;
-        }
+        min-height: fit-content;
+        padding: 10px;
+        background-color: lighten($secondary-background, 10%);
+        box-shadow: 0 0 10px lighten($secondary-background, 10%);
     }
 }
 
 @media screen and (min-width: 786px) {
-    .eduExp__container {
-        @include flexRow();
-        .work,
-        .education {
-            width: 50%;
-        }
-    }
 }
