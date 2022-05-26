@@ -11,10 +11,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: $main-background;
+        background-color: darken($main-background, 10%);
         box-shadow: 0 2px 5px $main-background;
         width: 90%;
-        min-height: 160px;
+        min-height: 210px;
         margin: 15px auto;
         font-family: "Kanit", sans-serif;
 
@@ -27,15 +27,16 @@
         }
         .mid__top {
             text-align: center;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             color: white;
-            padding: 5px;
+            padding: 0 10px;
         }
         .mid__bottom {
             text-align: center;
-            font-size: 1rem;
+            font-size: 0.9rem;
             color: white;
-            padding: 10px;
+            padding: 0 10px;
+            margin-bottom: 10px;
         }
 
         .bottom__ {
@@ -44,10 +45,6 @@
             color: white;
             font-size: 0.9rem;
         }
-    }
-
-    .non__active__background {
-        background-color: lighten($main-background, 24%);
     }
 
     .card__on__top__active {
@@ -74,6 +71,10 @@
             cursor: pointer;
         }
     }
+
+    .non__active__background {
+        background-color: transparent;
+    }
 }
 
 @media screen and (min-width: 786px) {
@@ -90,9 +91,11 @@
             }
             .mid__top {
                 font-size: 1.4rem;
+                padding: 10px;
             }
             .mid__bottom {
                 font-size: 1.1rem;
+                padding: 5px 10px;
             }
             .bottom__ {
                 font-size: 1.1rem;

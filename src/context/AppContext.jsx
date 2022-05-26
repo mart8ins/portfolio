@@ -24,7 +24,7 @@ const AppContextProvider = ({ children }) => {
             });
         }
         if (modalSettings.type === "aboutExpEdu") {
-            setModalCustomStyle({});
+            setModalCustomStyle({ backgroundColor: "#282c34" });
         }
         if (modalSettings.type === "learnedTech") {
             setModalCustomStyle({ backgroundColor: "#282c34" });

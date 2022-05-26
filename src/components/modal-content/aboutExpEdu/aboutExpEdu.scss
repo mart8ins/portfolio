@@ -1,6 +1,7 @@
 @import "../../../styles/styles";
 
 .eduExp__container {
+    margin-top: 15px;
     @include flexColumn();
     @include fadeInStatic(2s);
     .eduExp__title {
@@ -8,16 +9,19 @@
         text-align: center;
         font-size: 1.3rem;
         font-family: "Black Ops One", cursive;
-        color: $secondary-background;
+        color: whitesmoke;
+        border-bottom: 1px solid $secondary-background;
+        padding: 10px;
     }
     .work,
     .education {
         min-height: fit-content;
         padding: 10px;
-        background-color: lighten($secondary-background, 10%);
-        box-shadow: 0 0 10px lighten($secondary-background, 10%);
     }
 }
 
 @media screen and (min-width: 786px) {
+    .eduExp__container {
+        margin-top: 20px;
+    }
 }
