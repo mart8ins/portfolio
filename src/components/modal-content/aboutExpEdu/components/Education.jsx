@@ -1,6 +1,6 @@
 import React from "react";
 
-const Education = ({ eng, data, top, center, bottom }) => {
+const Education = ({ eng, data }) => {
     console.log(data);
     return (
         <>

@@ -30,13 +30,12 @@
 }
 
 .eduExp__container .eduExp__title {
-  margin-top: 20px;
   text-align: center;
   font-size: 1.3rem;
   font-family: "Black Ops One", cursive;
   color: whitesmoke;
   border-bottom: 1px solid #49515f;
-  padding: 10px;
+  padding: 5px;
 }
 
 .eduExp__container .work,
@@ -49,6 +48,6 @@
 
 @media screen and (min-width: 786px) {
   .eduExp__container {
-    margin-top: 20px;
+    margin-top: 0px;
   }
 }
