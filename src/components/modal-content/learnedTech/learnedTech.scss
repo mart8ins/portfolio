@@ -39,6 +39,7 @@
             box-shadow: 0 0 5px lighten($main-background, 75%);
             font-size: 0.9rem;
             color: lighten($main-background, 65%);
+            color: $grey-color;
             transition: 0.3s;
             display: inline-block;
             @include flexCenter();

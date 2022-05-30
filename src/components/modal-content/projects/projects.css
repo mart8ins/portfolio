@@ -1,0 +1,265 @@
+.projects__container .project__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  z-index: 1;
+  border-radius: 4px;
+  background-color: #2a2e37;
+  -webkit-box-shadow: 0 0 4px #b1b7c3;
+          box-shadow: 0 0 4px #b1b7c3;
+  padding: 5px 10px;
+  -webkit-animation: static 6s;
+          animation: static 6s;
+}
+
+@-webkit-keyframes static {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes static {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.projects__container .project__nav h3 {
+  color: #b1b7c3;
+  font-family: "Kanit", sans-serif;
+}
+
+.projects__container .project__nav a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  -webkit-box-shadow: 0 1px 2px #b1b7c3;
+          box-shadow: 0 1px 2px #b1b7c3;
+  margin: 4px;
+  font-family: "Kanit", sans-serif;
+}
+
+.projects__container .project__nav a:hover {
+  cursor: pointer;
+  background-color: #333842;
+}
+
+.projects__container .scroll__container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects__container .scroll__container .scroll-element {
+  -webkit-box-shadow: 0 0 3px white;
+          box-shadow: 0 0 3px white;
+  height: 80%;
+  width: 100%;
+  background: linear-gradient(40deg, #333842, #3e4451);
+}
+
+.projects__container .scroll__container .element__hidden {
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.projects__container .scroll__container .element__scrolled {
+  opacity: 1;
+  -webkit-animation: slideFromLeftFading 1s ease-in-out;
+          animation: slideFromLeftFading 1s ease-in-out;
+}
+
+@-webkit-keyframes slideFromLeftFading {
+  0% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromLeftFading {
+  0% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.projects__container .projects__intro {
+  margin-top: -60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects__container .projects__intro h1 {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 3vmax;
+  font-family: "Kanit", sans-serif;
+}
+
+.projects__container .projects__intro p {
+  text-align: justify;
+  margin: 30px;
+  color: #b1b7c3;
+  font-size: 2vmax;
+}
+
+.projects__container .project__data h1 {
+  margin: 30px;
+  text-align: right;
+  color: whitesmoke;
+  font-size: 3vmax;
+  font-family: "Kanit", sans-serif;
+  border-bottom: 1px solid #00ff00;
+}
+
+.projects__container .project__data p {
+  text-align: justify;
+  margin: 30px;
+  color: #b1b7c3;
+  font-size: 2.2vmax;
+}
+
+.projects__container .project__data .tech__stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 20px;
+}
+
+.projects__container .project__data .tech__stack .tech__item {
+  background-color: #b1b7c3;
+  margin: 5px;
+  padding: 2px 5px;
+  font-family: "Kanit", sans-serif;
+  border-radius: 5px;
+  color: #282c34;
+  -webkit-box-shadow: 0 5px 5px black;
+          box-shadow: 0 5px 5px black;
+}
+
+.projects__container .project__data .see__project {
+  margin: 0 20px;
+}
+
+.projects__container .project__data .see__project h3 {
+  margin: 30px;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 2.2vmax;
+}
+
+.projects__container .project__data .see__project .see__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 40px;
+}
+
+.projects__container .project__data .see__project .see__links a {
+  text-decoration: none;
+  color: #b1b7c3;
+  width: 50px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  background-color: #333842;
+  -webkit-box-shadow: 0 0 5px #1d2026;
+          box-shadow: 0 0 5px #1d2026;
+  text-align: center;
+  padding: 10px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.projects__container .project__data .see__project .see__links a:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #b1b7c3;
+          box-shadow: 0 0 5px #b1b7c3;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media screen and (min-width: 786px) {
+  .projects__container .scroll__container .scroll-element {
+    width: 60%;
+  }
+  .projects__container .projects__intro h1 {
+    font-size: 2.5vmax;
+  }
+  .projects__container .projects__intro p {
+    font-size: 1.8vmax;
+  }
+  .projects__container .project__data h1 {
+    color: whitesmoke;
+    font-size: 2.9vmax;
+  }
+  .projects__container .project__data p {
+    font-size: 1.8vmax;
+  }
+  .projects__container .project__data .tech__stack .tech__item {
+    padding: 4px 8px;
+  }
+  .projects__container .project__data .see__project {
+    margin: 0 20px;
+  }
+  .projects__container .project__data .see__project h3 {
+    font-size: 2vmax;
+  }
+  .projects__container .project__data .see__project .see__links a {
+    width: 80px;
+    font-size: 1.4rem;
+  }
+}

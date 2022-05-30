@@ -30,7 +30,7 @@ const AppContextProvider = ({ children }) => {
             setModalCustomStyle({ backgroundColor: "#282c34" });
         }
         if (modalSettings.type === "projects") {
-            setModalCustomStyle({});
+            setModalCustomStyle({ backgroundColor: "#282c34" });
         }
     }, [modalSettings, smallBrowserWindow]);
 

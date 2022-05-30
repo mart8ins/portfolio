@@ -1,7 +1,6 @@
 import React from "react";
 
 const Education = ({ eng, data }) => {
-    console.log(data);
     return (
         <>
             {data && (

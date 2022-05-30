@@ -1,0 +1,180 @@
+@import "../../../styles/styles";
+
+.projects__container {
+    .project__nav {
+        @include flexColumn();
+        position: fixed;
+        z-index: 1;
+        border-radius: 4px;
+        background-color: lighten($main-background, 1%);
+        box-shadow: 0 0 4px $grey-color;
+        padding: 5px 10px;
+        @include fadeInStatic(6s);
+
+        h3 {
+            color: $grey-color;
+            font-family: "Kanit", sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+            box-shadow: 0 1px 2px $grey-color;
+            margin: 4px;
+            font-family: "Kanit", sans-serif;
+            &:hover {
+                cursor: pointer;
+                background-color: lighten($main-background, 5%);
+            }
+        }
+    }
+    .scroll__container {
+        min-height: 100vh;
+        @include flexCenter();
+        .scroll-element {
+            box-shadow: 0 0 3px white;
+            height: 80%;
+            width: 100%;
+            background: linear-gradient(40deg, lighten($main-background, 5%), lighten($main-background, 10%));
+        }
+        .element__hidden {
+            opacity: 0;
+            transition: opacity 500ms;
+        }
+
+        .element__scrolled {
+            @include slideFromLeftFading();
+        }
+    }
+    .projects__intro {
+        margin-top: -60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+            text-align: center;
+            color: whitesmoke;
+            font-size: 3vmax;
+            font-family: "Kanit", sans-serif;
+        }
+        p {
+            text-align: justify;
+            margin: 30px;
+            color: $grey-color;
+            font-size: 2vmax;
+        }
+    }
+
+    .project__data {
+        h1 {
+            margin: 30px;
+            text-align: right;
+            color: whitesmoke;
+            font-size: 3vmax;
+            font-family: "Kanit", sans-serif;
+            border-bottom: 1px solid $lime-green;
+        }
+        p {
+            text-align: justify;
+            margin: 30px;
+            color: $grey-color;
+            font-size: 2.2vmax;
+        }
+        .tech__stack {
+            @include flexCenter();
+            flex-wrap: wrap;
+            margin: 0 20px;
+            .tech__item {
+                background-color: $grey-color;
+                margin: 5px;
+                padding: 2px 5px;
+                font-family: "Kanit", sans-serif;
+                border-radius: 5px;
+                color: $main-background;
+                box-shadow: 0 5px 5px black;
+            }
+        }
+
+        .see__project {
+            margin: 0 20px;
+            h3 {
+                margin: 30px;
+                text-align: center;
+                color: whitesmoke;
+                font-size: 2.2vmax;
+            }
+
+            .see__links {
+                @include flexRow();
+                justify-content: space-evenly;
+                margin: 40px;
+                a {
+                    text-decoration: none;
+                    color: $grey-color;
+                    width: 50px;
+                    font-size: 1.1rem;
+                    border-radius: 5px;
+                    background-color: lighten($main-background, 5%);
+                    box-shadow: 0 0 5px darken($main-background, 5%);
+                    text-align: center;
+                    padding: 10px;
+                    transition: 500ms;
+                    &:hover {
+                        cursor: pointer;
+                        box-shadow: 0 0 5px $grey-color;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 786px) {
+    .projects__container {
+        .scroll__container {
+            .scroll-element {
+                width: 60%;
+            }
+        }
+
+        .projects__intro {
+            h1 {
+                font-size: 2.5vmax;
+            }
+            p {
+                font-size: 1.8vmax;
+            }
+        }
+
+        .project__data {
+            h1 {
+                color: whitesmoke;
+                font-size: 2.9vmax;
+            }
+            p {
+                font-size: 1.8vmax;
+            }
+            .tech__stack {
+                .tech__item {
+                    padding: 4px 8px;
+                }
+            }
+
+            .see__project {
+                margin: 0 20px;
+                h3 {
+                    font-size: 2vmax;
+                }
+
+                .see__links {
+                    a {
+                        width: 80px;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
