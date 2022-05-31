@@ -48,7 +48,9 @@
 
 .contacts .my__github__icon a {
   color: white;
-  font-size: 4rem;
+  font-size: 2.5rem;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .contacts .my__github__icon a:hover {

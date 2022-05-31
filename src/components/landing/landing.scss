@@ -34,8 +34,10 @@
         @include flexColumn();
         margin: 20px;
         border-radius: 10px;
-        box-shadow: 0px 0px 12px darken(white, 20%);
-        background-color: lighten($main-background, 5%);
+        box-shadow: 0px 0px 12px white;
+        background-color: whitesmoke;
+        color: lighten($main-background, 25%);
+
         img {
             min-width: 120px;
             max-width: 290px;
@@ -43,10 +45,12 @@
             align-self: center;
         }
         p {
+            text-indent: 5%;
             width: 95%;
             margin: 10px auto;
             text-align: justify;
             font-size: 1rem;
+            line-height: 1.5rem;
         }
 
         @include fadeInStatic(4s);
@@ -110,7 +114,7 @@
                 padding: 20px;
                 width: 60%;
                 margin-top: 0px;
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
         }
 

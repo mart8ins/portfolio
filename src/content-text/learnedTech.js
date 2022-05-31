@@ -8,16 +8,23 @@ export const tech = {
             name: "HTML, HTTP",
             frameworks: [],
             eng: {
-                text: `HTML was the first one I encountered when started learning programming/WEB development. I understand its importance in the development and display of a WEB page. A skeleton that dictates what the structure of a WEB page will be. I know and had a good practice on how to use the most popular elements and attributes. I am also familiar with HTTP protocol methods and statuses. I have gained a good practice during this project, making frontend requests and backend responses.`,
+                text: `HTML was the first one I encountered when started learning programming/WEB development. I understand its importance in the development and display of a WEB page. A skeleton that dictates what the structure of a WEB page will be. I know and had a good practice on how to use the most popular elements and attributes. I am also familiar with HTTP protocol methods and statuses. I have gained a good practice making frontend requests and backend responses.`,
             },
             lv: {
-                text: `HTML bija pirmais ar ko saskāros, uzākot mācīties programēšanu/WEB izstrādi. Saprotu tā nozīmi WEB lapas izstrādē un attēlošanā. Skelets, kas diktē to, kāda struktūra būs WEB lapai. Pārzinu un protu izmantot populārākos elementus un atribūtus. Pārzinu arī HTTP protokola metodes un statusus. Ir iegūta arī laba pieredze šo metožu un statusu izmantošanā šī projekta ietvaros.`,
+                text: `HTML bija pirmais ar ko saskāros, uzākot mācīties programēšanu/WEB izstrādi. Saprotu tā nozīmi WEB lapas izstrādē un attēlošanā. Skelets, kas diktē to, kāda struktūra būs WEB lapai. Pārzinu un protu izmantot populārākos elementus un atribūtus. Pārzinu arī HTTP protokola metodes un statusus. Ir iegūta arī laba pieredze šo metožu un statusu izmantošanā dažādu projektu ietvaros.`,
             },
         },
         {
             name: "CSS",
             frameworks: [
                 {
+                    type: "preProcessor",
+                    name: "Sass",
+                    eng: `Sass is one of the latest technologies I have mastered and started using in my self-learning practice projects. Very easy style development for websites using this css preprocessor. MixIn\`s provides great ways to reduce the need to write redundant code, just like programming functions.`,
+                    lv: `Sass ir viena no pēdējām tehnoloģijām, ko esmu apguvis un sācis lietot izstrādājot savu prakses projektus. Ļoti atvieglota stila izstrāde mājaslapām izmantojot šo css apstrādātāju. MixIn sniedz lieliskas iespējas samazināt lieka koda rakstīšanas vajadzību, gluži tāpat funkcijas programmēšanā.`,
+                },
+                {
+                    type: "framework",
                     name: "Bootstrap",
                     eng: `I know that there are many CSS frameworks. I have a little expierence with most popular, Bootstrap.  I had used it in some small learning projects but i stoped because wanted to learn more about the basics of CSS itself, without any framework. Also, pure CSS provides more freedom.`,
                     lv: `Zinu, ka CSS frameworki ir daudz un dažādi. Ar vis populārāko, Bootstrap, ir bijusi saskare, esmu nedaudz izmantojis to dažos mazos mācīšanās projektos, bet pārstāju to izmantot, jo vairāk vēlējos gūt praksi ar pašiem CSS pamatiem, bez nekādiem frameworkiem. Tāpat arī, tīrs CSS sniedz vairāk brīvības izpausmes.`,
@@ -31,7 +38,7 @@ export const tech = {
             },
         },
         {
-            name: "JS",
+            name: "JavaScript",
             frameworks: [
                 {
                     name: "React",
@@ -50,6 +57,16 @@ export const tech = {
             },
             lv: {
                 text: `Javascript ir bijusi programmēšanas valoda, kuras virzienā esmu izvēlējis doties uzsākot macīties programmēšanu. Šī valoda ir pietiekami viegla un ātri uztverama, un loģiska. Saprotu un spēju pārvaldīt visus galvenos principus – variables un to scope, kondīcijas, loops, vienkāršās un augstākās klases funkcijas, objektus un objektu orientētu programmēšanu, AJAX, JSON, manipulācijas ar DOM u.c.. `,
+            },
+        },
+        {
+            name: "TypeScript",
+            frameworks: [],
+            eng: {
+                text: `Typescript is one of the latest technologies I have been actively using in self-study projects. TS has a seemingly larger amount of code in project development that needs to be written, but it is so effective at catching errors in the code writing process that it saves a lot of time later in debugging.`,
+            },
+            lv: {
+                text: `Typescript ir viena no pēdējā tehnoloģijām, ko es aktīvi esmu sācis izmantot pašmācības prakses projektos. TS ir šķietami lielāks koda daudzums projektu izstrādē, ko jāraksta, bet tas tik efektīgi spēj izķert kļūdas koda rakstīšanas procesā, ka tas aiztaupa daudz laika vēlāk, kļūdu meklēšanā.`,
             },
         },
         {

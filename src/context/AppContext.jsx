@@ -41,7 +41,7 @@ const AppContextProvider = ({ children }) => {
             setSmallBrowserWindow(false);
         }
     };
-    // window.addEventListener("resize", updateScreenSize);
+    window.addEventListener("resize", updateScreenSize);
 
     return <AppContext.Provider value={{ eng, setEng, modalSettings, setModalSettings, modalCustomStyle }}>{children}</AppContext.Provider>;
 };

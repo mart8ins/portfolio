@@ -73,13 +73,16 @@
     }
 
     .tech__description {
-        color: lighten($main-background, 65%);
         width: 95%;
         margin: 5px auto;
 
         .tech__text {
             font-size: 1rem;
             text-indent: 1rem;
+            background-color: whitesmoke;
+            color: lighten($main-background, 25%);
+            padding: 10px;
+            border-radius: 5px;
         }
 
         .tech__frameworks {
@@ -91,10 +94,15 @@
             h4 {
                 text-align: center;
                 font-size: 1rem;
+                color: $grey-color;
             }
             p {
                 font-size: 0.9rem;
                 text-indent: 1rem;
+                background-color: whitesmoke;
+                color: lighten($main-background, 25%);
+                padding: 10px;
+                border-radius: 5px;
             }
         }
     }
@@ -131,6 +139,7 @@
 
             .tech__text {
                 font-size: 1.2rem;
+                padding: 20px;
             }
 
             .tech__frameworks {
@@ -142,6 +151,7 @@
                 }
                 p {
                     font-size: 1rem;
+                    padding: 15px;
                 }
             }
         }

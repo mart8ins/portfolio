@@ -28,7 +28,8 @@
     .my__github__icon {
         a {
             color: white;
-            font-size: 4rem;
+            font-size: 2.5rem;
+            transition: 500ms;
             &:hover {
                 color: $lime-green;
             }

@@ -1,58 +1,5 @@
 .projects__container .project__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: fixed;
-  z-index: 1;
-  border-radius: 4px;
-  background-color: #2a2e37;
-  -webkit-box-shadow: 0 0 4px #b1b7c3;
-          box-shadow: 0 0 4px #b1b7c3;
-  padding: 5px 10px;
-  -webkit-animation: static 6s;
-          animation: static 6s;
-}
-
-@-webkit-keyframes static {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes static {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.projects__container .project__nav h3 {
-  color: #b1b7c3;
-  font-family: "Kanit", sans-serif;
-}
-
-.projects__container .project__nav a {
-  text-decoration: none;
-  color: white;
-  padding: 5px 10px;
-  -webkit-box-shadow: 0 1px 2px #b1b7c3;
-          box-shadow: 0 1px 2px #b1b7c3;
-  margin: 4px;
-  font-family: "Kanit", sans-serif;
-}
-
-.projects__container .project__nav a:hover {
-  cursor: pointer;
-  background-color: #333842;
+  display: none;
 }
 
 .projects__container .scroll__container {
@@ -115,7 +62,7 @@
 }
 
 .projects__container .projects__intro {
-  margin-top: -60px;
+  margin: 10px 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,25 +84,38 @@
 
 .projects__container .projects__intro p {
   text-align: justify;
-  margin: 30px;
-  color: #b1b7c3;
-  font-size: 2vmax;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 20px;
+  text-indent: 5%;
+  background-color: whitesmoke;
+  color: #5f697c;
+}
+
+.projects__container .project__data {
+  margin: 15px 0;
 }
 
 .projects__container .project__data h1 {
-  margin: 30px;
+  margin: 25px;
   text-align: right;
   color: whitesmoke;
-  font-size: 3vmax;
+  font-size: 1.6rem;
   font-family: "Kanit", sans-serif;
   border-bottom: 1px solid #00ff00;
 }
 
 .projects__container .project__data p {
   text-align: justify;
-  margin: 30px;
+  margin: 15px;
   color: #b1b7c3;
-  font-size: 2.2vmax;
+  font-size: 1.1rem;
+  background-color: whitesmoke;
+  color: #5f697c;
+  padding: 20px;
+  border-radius: 5px;
+  text-indent: 5%;
 }
 
 .projects__container .project__data .tech__stack {
@@ -233,21 +193,77 @@
 }
 
 @media screen and (min-width: 786px) {
+  .projects__container .project__nav {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    border-radius: 4px;
+    background-color: #2a2e37;
+    -webkit-box-shadow: 0 0 4px #b1b7c3;
+            box-shadow: 0 0 4px #b1b7c3;
+    padding: 5px 10px;
+    -webkit-animation: static 6s;
+            animation: static 6s;
+  }
+  @-webkit-keyframes static {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes static {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .projects__container .project__nav h3 {
+    color: #b1b7c3;
+    font-family: "Kanit", sans-serif;
+  }
+  .projects__container .project__nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    -webkit-box-shadow: 0 1px 2px #b1b7c3;
+            box-shadow: 0 1px 2px #b1b7c3;
+    margin: 4px;
+    font-family: "Kanit", sans-serif;
+  }
+  .projects__container .project__nav a:hover {
+    cursor: pointer;
+    background-color: #333842;
+  }
   .projects__container .scroll__container .scroll-element {
     width: 60%;
   }
+  .projects__container .projects__intro {
+    margin-top: -100px;
+  }
   .projects__container .projects__intro h1 {
-    font-size: 2.5vmax;
+    font-size: 2.3vmax;
   }
   .projects__container .projects__intro p {
-    font-size: 1.8vmax;
+    font-size: 1.3vmax;
+    padding: 20px 30px;
   }
   .projects__container .project__data h1 {
     color: whitesmoke;
     font-size: 2.9vmax;
   }
   .projects__container .project__data p {
-    font-size: 1.8vmax;
+    font-size: 1.4vmax;
   }
   .projects__container .project__data .tech__stack .tech__item {
     padding: 4px 8px;

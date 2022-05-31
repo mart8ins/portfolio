@@ -1,10 +1,14 @@
 const landingIntro = {
-    lv: `Grāmata „Juridiskie teksti latviešu valodā. Tradīcijas sākotne un rediģēšanas principi” izaugusi no prakses – no autores personiskās pieredzes darbā ar juridiskiem tekstiem un no vēlmes saprast, kāpēc šie teksti un to valoda ir tieši tādi. Proti, ciktāl tos ietekmējusi vēsturiskā tradīcija un ciktāl – maldīgi priekšstati par tradīciju, un kā tos rediģēt, lai vienlaikus ievērotu valodas likumības un nepārkāptu dažādus juridiskos tabu (jeb lai vilks paēdis un kaza dzīva). „Pamazām nācu pie atziņas – lai pilnvērtīgi rediģētu, nepieciešama dziļāka izpratne par šiem tekstiem un tie jāskata plašākā kontekstā. Krājoties pieredzei, meklēju teorētisku apstiprinājumu saviem empīriskajiem secinājumiem, un tā nu esmu nonākusi līdz šai grāmatai,” stāsta I. Treimane.`,
-    eng: `Here you can find activities to practise your reading skills. Reading will help you to improve your understanding of the language and build your vocabulary.
-
-    The self-study lessons in this section are written and organised according to the levels of the Common European Framework of Reference for languages (CEFR). There are different types of texts and interactive exercises that practise the reading skills you need to do well in your studies, to get ahead at work and to communicate in English in your free time.
-    
-    Take our free online English test to find out which level to choose. Select your level, from beginner (CEFR level A1) to advanced (CEFR level C1), and improve your reading skills at your own speed, whenever it's convenient for you.`,
+    lv: `Sveicināti! 
+    Mans vārds ir Mārtiņš. Paldies Jums, ka veltiet savu laiku manis iepazīšanai apmeklējot manu mājaslapu. Pēdējos pāris gadus esmu aktīvi veltījis gandrīz visu savu brīvo laiku programmēšanas apguvei ar mērķi mainīt savu karjeru. Uz doto brīdi manā darba pieredzē nav nekas, kas saistīts ar programmēšanu vai ar jebko citu IT nozarē, bet ir milzīga vēlme un motivācija to mainīt. Pašmācības ceļā esmu apguvis pietiekami daudz tehnoloģiju un to sniegtās plašās iespējas, kā arī guvis labu praksi pašmācībā, lai būtu pārliecināts, ka esmu spējīgs uzsākt strādāt šajā nozarē. 
+    Saprotu, ka iztrūkstošā darba pieredze spēlēs būtisku nozīmi tajā kā mani uztvers izskatot kandidatūru uz vakanci. Bet no savas puses varu garantēt, ka, ja man tiks dota iespēja tad manā personā saņemsiet - 1) milzīgu apņemšanos sevi turpināt apmācīt un attīstīt gan darba vidē, gan arī ārpus tās,  2) personu, kas orientēta uz efektīgu uzdevumu izpildi un mērķu sasniegšanu, 3) lojalitāti un lielu atbildības sajūtu, 4) labu un uzticamu komandas biedru.
+    Priecašos no Jums sagaidīt ziņu ar uzaicinājumu uz darba pārrunām vai atsūtītu darba uzdevumu sevis pierādīšanai.
+    `,
+    eng: `Greetings!
+	My name is Martins. Thank you for taking your time to get to know me by visiting my website. For the past couple of years, I have been actively devoting almost all of my free time to learn programming with goal to change my career. At the moment, my work experience has nothing to do with programming or anything else in the IT industry, but there is a huge desire and motivation to change it. Through self-study, I have learned enough technologies and opportunities they offer. I have good practice in coding to be confident that I am able to start working in this field.
+I understand that the lack of work experience will play a significant role in how I will be perceived when applying for a vacancy. But for my part, I can guarantee that if I am given the opportunity, then in my person you will receive - 1) a huge commitment to continue to develop myself both inside and outside the work environment, 2) a person who is focused on performing tasks effectively and achieving goals, 3) loyalty and a great sense of responsibility, 4) a good and reliable team member.
+I will be glad to receive a message from you with an invitation to a job interview or some coding task to prove myself.
+`,
 };
 
 const landingButtons = {

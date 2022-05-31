@@ -76,7 +76,7 @@ const LearnedTech = () => {
                                 return (
                                     <div key={i} className="tech__frameworks">
                                         <h4>
-                                            Framework <span>{it.name}</span>
+                                            {it.type === "preProcessor" ? "Preprocessor" : "Framework"} <span>{it.name}</span>
                                         </h4>
                                         <p>{it[lang]}</p>
                                     </div>

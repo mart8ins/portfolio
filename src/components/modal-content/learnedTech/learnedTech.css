@@ -122,7 +122,6 @@
 }
 
 .tech__container .tech__description {
-  color: #ced2d9;
   width: 95%;
   margin: 5px auto;
 }
@@ -130,6 +129,10 @@
 .tech__container .tech__description .tech__text {
   font-size: 1rem;
   text-indent: 1rem;
+  background-color: whitesmoke;
+  color: #5f697c;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .tech__container .tech__description .tech__frameworks {
@@ -143,11 +146,16 @@
 .tech__container .tech__description .tech__frameworks h4 {
   text-align: center;
   font-size: 1rem;
+  color: #b1b7c3;
 }
 
 .tech__container .tech__description .tech__frameworks p {
   font-size: 0.9rem;
   text-indent: 1rem;
+  background-color: whitesmoke;
+  color: #5f697c;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -180,6 +188,7 @@
   }
   .tech__container .tech__description .tech__text {
     font-size: 1.2rem;
+    padding: 20px;
   }
   .tech__container .tech__description .tech__frameworks {
     padding: 20px;
@@ -190,5 +199,6 @@
   }
   .tech__container .tech__description .tech__frameworks p {
     font-size: 1rem;
+    padding: 15px;
   }
 }
