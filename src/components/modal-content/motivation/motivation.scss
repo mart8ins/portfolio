@@ -17,11 +17,15 @@
     p {
         font-size: 0.9rem;
         text-align: justify;
+        text-indent: 5%;
+        color: #5f697c;
+        line-height: 1.5rem;
     }
 }
 
 @media screen and (min-width: 786px) {
     .motivation__container {
+        width: 60%;
         h3 {
             color: lighten($main-background, 15%);
             font-family: "Black Ops One", cursive;
@@ -31,7 +35,7 @@
         }
         p {
             font-size: 1.1rem;
-            padding: 20px;
+            padding: 30px;
         }
     }
 }

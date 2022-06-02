@@ -36,9 +36,15 @@
 .motivation__container p {
   font-size: 0.9rem;
   text-align: justify;
+  text-indent: 5%;
+  color: #5f697c;
+  line-height: 1.5rem;
 }
 
 @media screen and (min-width: 786px) {
+  .motivation__container {
+    width: 60%;
+  }
   .motivation__container h3 {
     color: #49515f;
     font-family: "Black Ops One", cursive;
@@ -48,6 +54,6 @@
   }
   .motivation__container p {
     font-size: 1.1rem;
-    padding: 20px;
+    padding: 30px;
   }
 }
