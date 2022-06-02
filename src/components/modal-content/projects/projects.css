@@ -232,7 +232,7 @@
     color: #b1b7c3;
     font-family: "Kanit", sans-serif;
   }
-  .projects__container .project__nav a {
+  .projects__container .project__nav .navBtn {
     text-decoration: none;
     color: white;
     padding: 5px 10px;
@@ -241,9 +241,12 @@
     margin: 4px;
     font-family: "Kanit", sans-serif;
   }
-  .projects__container .project__nav a:hover {
+  .projects__container .project__nav .navBtn:hover {
     cursor: pointer;
     background-color: #333842;
+  }
+  .projects__container .project__nav .activeNavBtn {
+    background-color: #49515f;
   }
   .projects__container .scroll__container .scroll-element {
     width: 60%;

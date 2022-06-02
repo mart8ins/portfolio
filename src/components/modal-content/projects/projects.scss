@@ -134,7 +134,7 @@
                 font-family: "Kanit", sans-serif;
             }
 
-            a {
+            .navBtn {
                 text-decoration: none;
                 color: white;
                 padding: 5px 10px;
@@ -145,6 +145,9 @@
                     cursor: pointer;
                     background-color: lighten($main-background, 5%);
                 }
+            }
+            .activeNavBtn {
+                background-color: lighten($main-background, 15%);
             }
         }
         .scroll__container {
