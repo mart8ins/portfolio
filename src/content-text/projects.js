@@ -13,14 +13,14 @@ export const projectsIntro = {
 
 export const projects = [
     {
-        id: 1,
+        id: "s-list",
         title: {
             lv: "Iepirkumu liste",
             eng: "Shopping list",
         },
         about: {
             lv: `Aplikācija, kur iespējams izveidot veikala iepirkumu sarakstu un atzīmēt visus produktus vai katru indivinduāli kā izpildītu/neizpildītu. Iespējams arī izveidot un saglabāt ēdienu receptes ar attiecīgi nepieciešamajiem produktiem receptes pagatavošanai. Receptes sastāvdaļas iespējams nosūtīt pa tiešo uz kādu no esošajiem iepirkumu sarakstiem. Pašā iepirkumu sarakstā katrs produkts ir ar norādi, vai tas ir pievienots no receptes, tāpat arī redzams cik porcijām tas ir paredzēts.`,
-            eng: `An application where it is possible to create a store grocery shopping list and mark all products or each individually as completed / uncompleted. It is also possible to create and save food recipes with the necessary products for cooking the recipe. Recipe ingredients can be sent directly to one of the existing shopping lists. In the shopping list itself, each product indicates if it is received from recipe or not and also there is mentioned for how much servings it is used for.`,
+            eng: `An application where it is possible to create a store grocery shopping list and mark all products or each individually as checked / unchecked. It is also possible to create and save food recipes with the necessary products for cooking the recipe. Recipe ingredients can be sent directly to one of the existing shopping lists. In the shopping list itself, each product indicates if it is received from recipe or not and also there is mentioned for how much servings it is used for.`,
         },
         technologies: ["React", "Sass", "TypeScript", "ExpressJs", "MongoDB"],
         see: {
@@ -35,7 +35,51 @@ export const projects = [
         },
     },
     {
-        id: 2,
+        id: "mealz",
+        title: {
+            lv: "Mealz",
+            eng: "Mealz",
+        },
+        about: {
+            lv: `Pirmā manis izstrādātā mobilā iOS aplikācija. Iespējams izveidot veikala iepirkumu sarakstu un atzīmēt produktus kā izpildītu/neizpildītu. Iespējams arī izveidot un saglabāt ēdienu receptes ar attiecīgi nepieciešamajiem produktiem receptes pagatavošanai. Receptes sastāvdaļas iespējams nosūtīt pa tiešo uz kādu no esošajiem iepirkumu sarakstiem. Pašā iepirkumu sarakstā katrs produkts ir ar norādi, vai tas ir pievienots no receptes, tāpat arī redzams cik porcijām tas ir paredzēts.`,
+            eng: `My first developed iOS mobile app. It is possible to create a store grocery shopping list and mark each product as checked / unchecked. It is also possible to create and save food recipes with the necessary products for cooking the recipe. Recipe ingredients can be sent directly to one of the existing shopping lists. In the shopping list itself, each product indicates if it is received from recipe or not and also there is mentioned for how much servings it is used for.`,
+        },
+        technologies: ["React Native", "Expo", "Javascript"],
+        see: {
+            title: {
+                lv: "Apskatīt projektu iekš",
+                eng: "View project on",
+            },
+            links: {
+                web: "/",
+                github: "https://github.com/mart8ins/Mealz",
+            },
+        },
+    },
+    {
+        id: "seko",
+        title: {
+            lv: "Seko",
+            eng: "Seko",
+        },
+        about: {
+            lv: `Neliels sociālā tīkla projekts, kas sevī iekļauj draudzības starp lietotājiem un ziņu apmaiņu, tai skaitā, reālā laikā izmantojot Socket.io tehnoloģiju. Tāpat šī tehnoloģija tika izmantota, lai parādītu online esošās draudzības. Projektā ir autentifikācija. Lietotājs var reģistrēties un ienākt sistēmā, ja jau ir reģistrēts. Lietotājs ir autorizēts piekļūt un ietekmēt tikai savu saturu – pievienot, rediģēt un dzēst savu saturu. Uz servera lietotāja parole ir šifrēta. Ienākot sistēmā klientam tiek atsūtīts tokens, kura derīguma termiņš ir 60 minūtes. Pēc šī laika aplikācija automātiski izlogo un pārvirza klientu uz galveno lapu. Uz doto brīdi aplikācijā ir iespējams izveidot divu dažāda veida saturu – stāstu jeb "Story" un ievadīt sporta treniņa datus jeb "Workout". "Story" ir tāds kā blogs vai stāsts ko lietotājs var uzrakstīt. Citi lietotāji to var novērtēt un komentēt. Pats lietotājs stāstu var padarīt privātu vai publisku, tāpat arī nobloķēt komentārus. "Workout" ir lietotāja treniņa dienas datu saglabāšana. Izvēlas dienu, kad trenējās, ievada sesijas nosaukumu un savada treniņa datus – izpildītos vingrinājumus un atkārtojumu skaitu, svaru. Treniņa dienā var pievienot vairākas treniņa sesijas. Galvenajā satura plūsmas lapā redzams vis saturs, ko lietotāji ir pievienojuši, iespējams filtrēt pēc tipiem. Redzama pēdējā aktivitāte atstātajos komentāros un vērtējumos lietotāju "Story". Sadaļā, kur ir iespējams radīt saturu, ir satura kartiņas ar iespēju pogām. Pamata pogas ir 1) izveidot jaunu un 2) apskatīt visu jau esošo. "Workout" kartiņai papildus ir arī poga, kas aizved uz mācību lapu, kur ir iespējams apskatīt visus sistēmā esošos treniņa vingrinājumus, iegūt instrukciju par to kā katrs ir veicams. Visas treniņu dienas tiek sagrupētas kalendāra veidā. Redzams gads un mēneši, kuros ir eksistējoši treniņu dati. Treniņu dienas katrā mēnesī ir izceltas, kur katrs datums ir links uz detlaizētāku treniņa dienas apskati.`,
+            eng: `A small social network project that includes friendships and messaging between users, including real-time messaging with help of Socket.io technology. The project has authentication. The user can register and log in if they are already registered. The user is authorized to access and change only their own content - add, edit and delete. The user password on the server is encrypted. After authentication, a token with a validity period of 1 hour is sent to the client. After hour, the application automatically redirects the user to the landing page and logs off user. It is possible to create two different types of content -"Story" and "Workout". A "Story" is like a blog or story what user can write. Other users can rate and comment on it. The user can make the story private or public, as well as block the comments. "Workout" is the storage of user fitness workout day data. You can select the day of training, enter the name of the training session and save the training data. Training data includes a variety of possible exercises performed, sets for repetitions and corresponding weight for repetition. You can add several training sessions per training day. The main content feed page shows all the content that users have added and can be filtered by type. It also shows the last activity in the comments and ratings left by users in "Story" feed. In the "Create" section you can find content creation cards which contains option buttons. The main buttons are 1) create a new content and 2) view everything already existing for content type. Additionaly for the "Workout" card, there is also a button that takes you to the learning page, where you can view all the training exercises in the system, get instructions on how to do each. All training days are grouped into a calendar. There is year and months when training day exists. Training days are highlighted each month, with each date linking to a more detailed view of the training day.`,
+        },
+        technologies: ["React", "CSS", "ExpressJs", "MongoDB", "Cloudinary Image Storage", "Socket.io"],
+        see: {
+            title: {
+                lv: "Apskatīt projektu iekš",
+                eng: "View project on",
+            },
+            links: {
+                web: "https://mmseko.netlify.app/",
+                github: "https://github.com/mart8ins/seko-fo/tree/v2",
+            },
+        },
+    },
+    {
+        id: "elementi",
         title: {
             lv: "Elementi e-veikals",
             eng: "Elementi e-store",
@@ -57,7 +101,7 @@ export const projects = [
         },
     },
     {
-        id: 3,
+        id: "blogz",
         title: {
             lv: "Blogošanas lapa",
             eng: "Blogging site",
@@ -79,7 +123,7 @@ export const projects = [
         },
     },
     {
-        id: 4,
+        id: "tvshow",
         title: {
             lv: "TV šovi",
             eng: "TV shows",

@@ -61,9 +61,11 @@ const Projects = () => {
                             <div className="see__project">
                                 <h3>{eng ? project.see.title.eng : project.see.title.lv}</h3>
                                 <div className="see__links">
-                                    <a href={project.see.links.web} target="_blank">
-                                        WEB
-                                    </a>
+                                    {project.id !== "mealz" && (
+                                        <a href={project.see.links.web} target="_blank">
+                                            WEB
+                                        </a>
+                                    )}
                                     <a href={project.see.links.github} target="_blank">
                                         Github
                                     </a>
